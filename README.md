@@ -10,6 +10,10 @@
 - 警示腳本: 放置的是即時條件的腳本, 可以把內容匯入XS警示腳本, 依照條件說明, 設定警示雷達
 - 函數腳本: 放置的是盤後選股的排行榜條件, 可以把內容匯入XS函數區, 以排行條件的方式加入選股策略
 
+## Chrome 擴充功能
+
+`chrome-extension/` 內有一個 Manifest V3 的 Chrome 擴充功能, 可在瀏覽器工具列直接搜尋全部腳本並複製程式碼貼進 XS 編輯器. 載入方式、重建索引與上架打包步驟見 [chrome-extension/README.md](chrome-extension/README.md).
+
 ## 如何檢視程式碼
 
 
