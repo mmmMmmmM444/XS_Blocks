@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "XS 量化積木腳本集",
+  "short_name": "XS Blocks",
+  "version": "0.0.0.1",
+  "description": "搜尋 XQ 量化積木 3,400+ 條選股、警示、函數腳本原始碼，一鍵複製貼入 XS 編輯器。",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "XS 量化積木腳本集",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": [
+    "clipboardWrite"
+  ]
+}

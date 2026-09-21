@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>XS 量化積木腳本集</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="toolbar">
+    <input id="q" type="search" placeholder="搜尋代號 / 名稱 / 顯示名稱，例如 E0030 或 庫藏股" autocomplete="off" autofocus>
+    <select id="cat" title="腳本類別">
+      <option value="">全部</option>
+      <option value="選股腳本">選股</option>
+      <option value="警示腳本">警示</option>
+      <option value="函數腳本">函數</option>
+    </select>
+  </header>
+
+  <main id="list-view">
+    <div id="status" class="status">載入中…</div>
+    <ul id="list" class="list" tabindex="0"></ul>
+  </main>
+
+  <section id="detail-view" hidden>
+    <div class="detail-bar">
+      <button id="back" type="button" title="返回 (Esc)">‹ 返回</button>
+      <span id="detail-id" class="badge"></span>
+      <button id="copy" type="button" class="primary" title="複製整段程式碼 (Ctrl+Enter)">複製程式碼</button>
+    </div>
+    <h2 id="detail-name"></h2>
+    <dl class="meta">
+      <dt>顯示名稱</dt><dd id="detail-display"></dd>
+      <dt>執行頻率</dt><dd id="detail-freq"></dd>
+      <dt>路徑</dt><dd><a id="detail-link" target="_blank" rel="noopener"></a></dd>
+    </dl>
+    <pre id="detail-code" class="code"></pre>
+  </section>
+
+  <footer class="foot">
+    <span id="count"></span>
+    <span class="hint">↑↓ 選取 · Enter 開啟 · Esc 返回</span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
